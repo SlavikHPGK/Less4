@@ -18,4 +18,8 @@ class Person:
         self.name = name
         self.surname = surname
 
+    api_name = person['results'][0]['name']['first']
+    api_surname = person['results'][0]['name']['last']
+
+
 
