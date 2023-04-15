@@ -1,1 +1,8 @@
-print("ello world")
+import requests
+
+help(requests)
+r = requests.get('https://randomuser.me/api')
+
+print(r.content)
+person = r.content
+
